@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>items</title>
+  </head>
+  <body>
+    <ul>
+      ${arrEmploy.map(list =>`
+      <li><a href="/items/${list.lastName}">${list.lastName}</a></li>
+      ` ).join(" ") }
+    </ul>
+    <br />
+    <h1><a href="/"> home</a></h1>
+  </body>
+</html>
